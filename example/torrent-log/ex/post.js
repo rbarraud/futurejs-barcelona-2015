@@ -4,7 +4,7 @@ console.log(kp.id)
 
 var dht = new(require('bittorrent-dht'))({
   bootstrap: false,
-  verify: KP.verify,
+  verify: KP.verify
 })
 dht.listen(5001)
 
@@ -18,7 +18,6 @@ function updateHead (hash) {
   })
 }
 
-// ...
 var through = require('through2')
 var split = require('split2')
 process.stdin.pipe(split()).pipe(through.obj(write))
@@ -29,8 +28,8 @@ function write (buf, enc, next) {
     Buffer(buf)
   ])
   dht.put({ v: value }, function (errors, hash) {
-    prev = hash
     console.log(hash.toString('hex'))
+    prev = hash
     updateHead(hash)
     next()
   })

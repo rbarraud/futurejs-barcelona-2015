@@ -181,7 +181,7 @@ demo
 * self-archiving p2p youtube + webrtc livestreaming
 * p2p git issue tracker
 
-geocities RIP
+geocities RIP never again
 
 ---
 EOF
