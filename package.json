@@ -1,0 +1,13 @@
+{
+  "browser": {
+    "sodium": "sodium-browserify/browser.js"
+  },
+  "dependencies": {
+    "bittorrent-dht": "^3.2.6",
+    "bittorrent-dht-store-keypair": "^3.0.2",
+    "concat-stream": "^1.5.0",
+    "split2": "^1.0.0",
+    "through2": "^2.0.0",
+    "torrent-blob-store": "^2.1.0"
+  }
+}
